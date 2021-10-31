@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title> Checking-Fast</title>
+    <link rel="icon" type="icon/png" href="img/rocket-solid-24.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="contenedor header">
+        <div class="encabezado">
+            <div>
+                <img src="img/rocket-solid-96.png" class="icono-header" alt="">
+                <h1 class="formato"> Checking-Fast Daily</h1>
+            </div>
+
+            <a href="index.html"> Menú Principal</a></li>
+            <a href="depositos.html"> Movimientos Diarios </a> </li>
+        </div>
+        <!--<input type="button" value="Volver" class="boton_personalizado" id="boton_regresar">-->
+    </header>
+
+    <form action="" method="POST" id="" class="contenedor" onsubmit="return false;">
+        <h2> Registro de Caja </h2>
+        <div class="">
+            <div class="">
+            <p>Fecha:
+                <input type="date" name="fecha" size="20" class="inputbox fecha_personalizada" id="fecha">
+            </p>
+                <h3>Monedas</h3>
+
+                    <p>S/ 1.00 :
+                        <input type="number" name="1sol" size="40" class="inputbox monedas">
+                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                    </p>
+                    
+                    <p>S/ 2.00 :
+                        <input type="number" name="2soles" size="40" class="inputbox monedas">
+                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                    </p>
+
+                    <p>S/ 5.00 :
+                        <input type="number" name="5soles" size="40" class="inputbox monedas">
+                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                    </p>
+
+                    <p>S/ 0.50 :
+                        <input type="number" step="any" name="50centimos" size="40" class="inputbox monedas">
+                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                    </p>
+
+                    <p>S/ 0.20 :
+                        <input type="number" step="any" name="20centimos" size="40" class=" inputbox monedas">
+                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                    </p>
+
+                    <p>S/ 0.10 :
+                        <input type="number" step="any" name="10centimos" size="40" class="inputbox monedas">
+                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                    </p>
+            </div>
+
+            <div class="ingreseMonedas">
+                <h3>Billetes</h3>
+                
+                <p>S/ 10.00 :
+                    <input type="number" name="10soles" size="40" class="inputbox billetes">
+                    <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
+                </p>
+
+                <p>S/ 20.00 :
+                    <input type="number" name="20soles" size="40" class="inputbox billetes">
+                    <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
+                </p>
+
+                <p>S/ 50.00 :
+                    <input type="number" name="50soles" size="40" class="inputbox billetes">
+                    <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
+                </p>
+
+                <p>S/ 100.00 :
+                    <input type="number" name="100soles" size="40" class="inputbox billetes">
+                    <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
+                </p>
+            </div>
+        </div>
+         <p>
+            <input type="submit" value="Sumar">
+            <input type="reset" value="Borrar">
+        </p>
+        <p class="centrar boton">
+            <input type="submit" value="Guardar" class="boton_personalizado" id="boton">
+            
+        </p>
+
+    
+</body>
+</html>

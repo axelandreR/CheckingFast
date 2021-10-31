@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    min-height: 100%;
+    
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+/* Tipografía */
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+/* Header */
+
+.icono-header{
+    width: 3.5rem;
+}
+
+.header{
+    /* margin: 2rem auto; */
+    display: grid;
+    place-content: center;
+    background-color: azure;
+    border-radius: 3rem;
+    height: 25vh;
+}
+
+.encabezado{
+    text-align: center;
+}
+
+.formato{
+    margin: 0;
+    text-transform: uppercase;
+    color: rgba(233, 143, 8, 0.637);
+}
+
+
+/* Personalización menú */
+.menu_principal{
+    display: grid;
+    place-content: center;
+    height: 60vh;
+}
+
+.lista{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    
+    
+}
+
+.lista li{
+    margin: 2rem;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    background-color: #ffcc00;
+    border-radius: 2rem;
+    
+}
+
+.lista li a{
+    text-decoration: none;
+}
