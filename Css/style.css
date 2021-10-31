@@ -77,3 +77,11 @@ h1{
 .lista li a{
     text-decoration: none;
 }
+
+/* Personalización Interfaz de caja */
+/* Formulario */
+.formulario{
+    display: grid;
+    place-content: center;
+    height: 120vh;
+}
