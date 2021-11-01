@@ -35,9 +35,14 @@ h1{
     place-content: center;
     background-color: azure;
     border-radius: 3rem;
-    height: 25vh;
+    height: 40vh;
 }
 
+@media (min-width: 480px) {
+    .header{
+        height: 25vh;
+    }
+}
 .encabezado{
     text-align: center;
 }
@@ -83,7 +88,7 @@ h1{
 .formulario{
     display: grid;
     place-content: center;
-    height: 90vh;
+    height: 110vh;
 }
 
 .formulario_casillas{
@@ -99,7 +104,7 @@ h1{
 
 .alinear_input p{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .inputbox{
     width: 3rem;
@@ -107,6 +112,7 @@ h1{
 @media (min-width: 480px) {
     .formulario{
         padding: 0 2rem;
+        height: 90vh;
     }
     .formulario_casillas{
         flex-direction: row;
