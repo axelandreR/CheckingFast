@@ -129,10 +129,6 @@ body {
 }
 
 /* Main-botones */
-.botones{
-    
-    /* place-content: center; */
-}
 
 .img-boton{
     width: 3rem;
@@ -180,4 +176,17 @@ body {
 
 .img-footer{
     width: 2.5rem;
+}
+
+/* Interfaz Caja */
+
+/* Header Caja */
+.header-caja{
+    display: flex;
+}
+
+.ajustes-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
