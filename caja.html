@@ -23,87 +23,89 @@
         </div>
     </header>
     <main class="principal-caja main">
-        <div class="main-formato">
-            <div class="titulo-index">
+        <div class="main-formato titulo-caja">
+            <div class="titulo-index ">
                 <img src="img/estate.svg" class="img_titulo-index" alt="">
-                <h2 class="titulo">Menú Principal</h2>
+                <h2 class="titulo">Control Caja</h2>
             </div>
         </div>
 
-    </main>
-    <form action="" method="POST" id="form" class="contenedor formulario" onsubmit="return false;">
-        <h2> Registro de Caja </h2>
-        <div class="formulario_casillas estilo_Formulario">
-            <div class="alinear_input ">
-            <p>Fecha:
-                <span class="">Fecha de hoy</span>
-            </p>
-                <h3>Monedas</h3>
-
-                    <p>S/ 1.00 :
-                        <input type="number" name="1sol" size="40" class="inputboxCaja monedas">
-                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
-                    </p>
+        <form action="" method="POST" id="form" class="contenedor formulario" onsubmit="return false;">
+            <div class="formulario_casillas estilo_Formulario">
+                <div class="alinear_input ">
+                <p>Fecha:
+                    <span class="">Fecha de hoy</span>
+                </p>
+                    <h3>Monedas</h3>
+    
+                        <p>S/ 1.00 :
+                            <input type="number" name="1sol" size="40" class="inputboxCaja monedas">
+                            <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                        </p>
+                        
+                        <p>S/ 2.00 :
+                            <input type="number" name="2soles" size="40" class="inputboxCaja monedas">
+                            <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                        </p>
+    
+                        <p>S/ 5.00 :
+                            <input type="number" name="5soles" size="40" class="inputboxCaja monedas">
+                            <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                        </p>
+    
+                        <p>S/ 0.50 :
+                            <input type="number" step="any" name="50centimos" size="40" class="inputboxCaja monedas">
+                            <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                        </p>
+    
+                        <p>S/ 0.20 :
+                            <input type="number" step="any" name="20centimos" size="40" class=" inputboxCaja monedas">
+                            <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                        </p>
+    
+                        <p>S/ 0.10 :
+                            <input type="number" step="any" name="10centimos" size="40" class="inputboxCaja monedas">
+                            <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                        </p>
+                </div>
+    
+                <div class="alinear_input">
+                    <h3>Billetes</h3>
                     
-                    <p>S/ 2.00 :
-                        <input type="number" name="2soles" size="40" class="inputboxCaja monedas">
-                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+                    <p>S/ 10.00 :
+                        <input type="number" name="10soles" size="40" class="inputboxCaja billetes">
+                        <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
                     </p>
-
-                    <p>S/ 5.00 :
-                        <input type="number" name="5soles" size="40" class="inputboxCaja monedas">
-                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+    
+                    <p>S/ 20.00 :
+                        <input type="number" name="20soles" size="40" class="inputboxCaja billetes">
+                        <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
                     </p>
-
-                    <p>S/ 0.50 :
-                        <input type="number" step="any" name="50centimos" size="40" class="inputboxCaja monedas">
-                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+    
+                    <p>S/ 50.00 :
+                        <input type="number" name="50soles" size="40" class="inputboxCaja billetes">
+                        <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
                     </p>
-
-                    <p>S/ 0.20 :
-                        <input type="number" step="any" name="20centimos" size="40" class=" inputboxCaja monedas">
-                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
+    
+                    <p>S/ 100.00 :
+                        <input type="number" name="100soles" size="40" class="inputboxCaja billetes">
+                        <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
                     </p>
-
-                    <p>S/ 0.10 :
-                        <input type="number" step="any" name="10centimos" size="40" class="inputboxCaja monedas">
-                        <span class="avisoError">La cantidad ingresada es incorrecta</span>
-                    </p>
+                </div>
             </div>
 
-            <div class="alinear_input">
-                <h3>Billetes</h3>
+            <p class="centrar boton">
+                <input type="submit" value="Guardar" class="boton_personalizado" id="boton">
                 
-                <p>S/ 10.00 :
-                    <input type="number" name="10soles" size="40" class="inputboxCaja billetes">
-                    <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
-                </p>
-
-                <p>S/ 20.00 :
-                    <input type="number" name="20soles" size="40" class="inputboxCaja billetes">
-                    <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
-                </p>
-
-                <p>S/ 50.00 :
-                    <input type="number" name="50soles" size="40" class="inputboxCaja billetes">
-                    <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
-                </p>
-
-                <p>S/ 100.00 :
-                    <input type="number" name="100soles" size="40" class="inputboxCaja billetes">
-                    <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
-                </p>
-            </div>
-        </div>
+            </p>
+    </main>
+    
         
         <!-- <p>
             <input type="submit" value="Sumar">
             <input type="reset" value="Borrar">
         </p> -->
-        <p class="centrar boton">
-            <input type="submit" value="Guardar" class="boton_personalizado" id="boton">
-            
-        </p>
+        
 
         <script src="JS/javascript.js"></script>
 </body>
