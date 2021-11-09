@@ -86,11 +86,22 @@ body {
 }
 
 /* Main */
+.ajustes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.img-ajustes{
+    width: 2rem;
+    margin: 0.5rem 0;
+}
 .main{
+    display: grid;
+    place-content: center;
     border-radius: 1rem;
     border: 1px var(--font-color) solid;
     margin: 2rem 0;
-    height: 80vh;
+    height: 60vh;
 }
 
 .main-formato{
@@ -118,6 +129,11 @@ body {
 }
 
 /* Main-botones */
+.botones{
+    
+    /* place-content: center; */
+}
+
 .img-boton{
     width: 3rem;
 }
@@ -133,7 +149,7 @@ body {
 }
 
 .boton a{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-align: center; 
     width: 12rem;
@@ -141,10 +157,27 @@ body {
     color: white;
     background-color: var(--font-color);
     border-radius: 3rem;
-    
+    padding: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .texto_centrar{
     display: grid;
     place-content: center;
+}
+
+/* Footer */
+.footer{
+    background-color: var(--first-color);
+    border-radius: 1rem;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+}
+
+.img-footer{
+    width: 2.5rem;
 }
