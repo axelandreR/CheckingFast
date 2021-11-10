@@ -183,6 +183,15 @@ body {
     display: flex;
 }
 
+.icono-fondo{
+    width: 45px;
+    height: 45px;
+    background-color: #cafefb;
+    border-radius: 50%;
+    border: 1px black solid;
+    text-align: center;
+}
+
 .ajustes-header{
     width: 100%;
     display: flex;
@@ -198,6 +207,40 @@ body {
 .titulo-caja{
     position: absolute;
     top: -2.5rem;
-
+    left: 12.5%;
     margin: 0;
+}
+
+.formulario{
+    width: 40vh;
+}
+
+.alinear_input p{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputboxCaja{
+    width: 5rem;
+    border-radius: 0.25rem;
+}
+
+/* Boton */
+.boton_personalizado{
+    text-decoration: none;
+    padding: 5px 13px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: var(--font-color);
+    border-radius: 6px;
+    border: 1px solid #454652;
+    
+}
+.boton_personalizado:hover{
+    color: var(--font-color);
+    background-color: #ffffff;
+  }
+.boton{
+    margin: 0 auto;
 }

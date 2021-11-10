@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="contenedor header-caja">
-        <div>
+        <div class="icono-fondo">
             <img src="img/rocket-solid-96.png" class="img-ajustes" alt="">
         </div>
 
@@ -32,12 +32,11 @@
 
         <form action="" method="POST" id="form" class="contenedor formulario" onsubmit="return false;">
             <div class="formulario_casillas estilo_Formulario">
-                <div class="alinear_input ">
                 <p>Fecha:
                     <span class="">Fecha de hoy</span>
                 </p>
                     <h3>Monedas</h3>
-    
+                <div class="alinear_input">
                         <p>S/ 1.00 :
                             <input type="number" name="1sol" size="40" class="inputboxCaja monedas">
                             <span class="avisoError">La cantidad ingresada es incorrecta</span>
@@ -87,26 +86,59 @@
                         <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
                     </p>
     
-                    <p>S/ 100.00 :
+                    <p style="font-size: 0.85rem;">S/ 100.00 :
                         <input type="number" name="100soles" size="40" class="inputboxCaja billetes">
                         <span class="avisoErrorBilletes">La cantidad ingresada es incorrecta</span>
                     </p>
                 </div>
             </div>
 
-            <p class="centrar boton">
+            <p class="boton">
                 <input type="submit" value="Guardar" class="boton_personalizado" id="boton">
                 
             </p>
     </main>
-    
-        
-        <!-- <p>
-            <input type="submit" value="Sumar">
-            <input type="reset" value="Borrar">
-        </p> -->
-        
 
-        <script src="JS/javascript.js"></script>
+    <div class="contenedor main" id="resultados">
+        <h3 class="centrar" id="h3_aviso">Informacion del usuario</h3>
+        <hr>
+
+        <p id="p_fecha">
+            Fecha de hoy: <span></span>
+        </p>
+        <p id="p_sumaMonedas">
+            Suma Monedas: <span></span>
+        </p>
+        <p id="p_sumaBilletes">
+            Suma Billetes: <span></span>
+        </p>
+        <p id="p_sumaTotal">
+            Total: <span></span>
+        </p>
+
+    </div>
+
+    <footer class="footer">
+        <div class="menu-footer">
+            <a href="index.html">
+                <img src="img/estate.svg" class="img-footer" alt="">
+            </a> 
+            <a href="">
+                <img src="img/copy.svg" class="img-footer" alt="">
+            </a>
+            <a href="">
+                <img src="img/file-share-alt.svg" class="img-footer" alt="">
+            </a>
+            <a href="">
+                <img src="img/clipboard-alt.svg" class="img-footer" alt="">
+            </a>
+            <a href="">
+                <img src="img/user-circle.svg" class="img-footer" alt="">
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="JS/javascript.js"></script>
 </body>
 </html>

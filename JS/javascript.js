@@ -3,8 +3,8 @@
 window.addEventListener('load', function(){
     let formulario = document.querySelector('#form');
     
-
-
+    let resultado = document.querySelector('#resultados');
+    resultado.style.display= "none";
     // Ocultar avisos de error
     let aviso_error = document.getElementsByClassName("avisoError");
     let aviso_error_Billetes = document.getElementsByClassName("avisoErrorBilletes");
@@ -128,12 +128,26 @@ window.addEventListener('load', function(){
     }
 
     formulario.addEventListener('submit', function(){
+        let fecha = new Date();
+        let fecha_hoy = (fecha.getDate()+"/"+(fecha.getMonth() + 1)+"/"+(fecha.getFullYear()) );
         let monedas = document.getElementsByClassName('monedas');
         let sumaMonedas = sumaElementos(monedas);
 
         let billetes = document.getElementsByClassName('billetes');
         let sumaBilletes = sumaElementos(billetes);
+        let total = sumaMonedas + sumaBilletes;
 
+        resultado.style.display= "grid";
+        
+        let p_fecha = document.querySelector("#p_fecha span");
+        let p_monedas = document.querySelector("#p_sumaMonedas span");
+        let p_billetes = document.querySelector("#p_sumaBilletes span");
+        let p_total = document.querySelector("#p_sumaTotal span");
+
+        p_fecha.innerHTML = fecha_hoy;
+        p_monedas.innerHTML = sumaMonedas;
+        p_billetes.innerHTML = sumaBilletes;
+        p_total.innerHTML = total;
         
         console.log(sumaMonedas);
     })
