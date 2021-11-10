@@ -200,7 +200,7 @@ body {
 
 /* Main Caja */
 .principal-caja{
-    height: 100vh;
+    height: 120vh;
     position: relative;
 }
 
@@ -216,8 +216,20 @@ body {
 }
 
 .alinear_input p{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.avisoError{
+    grid-column: 1/3;
+    font-size: 0.8rem;
+    color: red;
+}
+
+.avisoErrorBilletes{
+    grid-column: 1/3;
+    font-size: 0.8rem;
+    color: red;
 }
 
 .inputboxCaja{

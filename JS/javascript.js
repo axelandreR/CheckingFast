@@ -2,7 +2,8 @@
 
 window.addEventListener('load', function(){
     let formulario = document.querySelector('#form');
-    
+    let principal = this.document.getElementsByClassName("principal-caja");
+
     let resultado = document.querySelector('#resultados');
     resultado.style.display= "none";
     // Ocultar avisos de error
@@ -10,12 +11,13 @@ window.addEventListener('load', function(){
     let aviso_error_Billetes = document.getElementsByClassName("avisoErrorBilletes");
 
     for(let i=0;i<aviso_error.length;i++){
-        aviso_error[i].style.display= "none";       
+        aviso_error[i].style.display= "none";          
     }
     for(let j=0;j<aviso_error_Billetes.length;j++){
         aviso_error_Billetes[j].style.display= "none";
     }
-
+        
+        principal.style.height= "100vh";
 
     // Suma de Monedas y Billetes
 
@@ -131,6 +133,7 @@ window.addEventListener('load', function(){
         let fecha = new Date();
         let fecha_hoy = (fecha.getDate()+"/"+(fecha.getMonth() + 1)+"/"+(fecha.getFullYear()) );
         let monedas = document.getElementsByClassName('monedas');
+        validacionMonedas(monedas);
         let sumaMonedas = sumaElementos(monedas);
 
         let billetes = document.getElementsByClassName('billetes');
