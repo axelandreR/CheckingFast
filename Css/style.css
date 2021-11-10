@@ -108,8 +108,6 @@ body {
     background-color: var(--title-color);
     border-radius: 1rem;
     margin: 2rem 1rem;
-    
-    
 }
 
 .titulo-index{
@@ -176,4 +174,30 @@ body {
 
 .img-footer{
     width: 2.5rem;
+}
+
+/* Interfaz Caja */
+
+/* Header Caja */
+.header-caja{
+    display: flex;
+}
+
+.ajustes-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Main Caja */
+.principal-caja{
+    height: 100vh;
+    position: relative;
+}
+
+.titulo-caja{
+    position: absolute;
+    top: -2.5rem;
+
+    margin: 0;
 }
