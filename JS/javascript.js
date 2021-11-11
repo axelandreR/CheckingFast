@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
     let principal = this.document.getElementsByClassName("principal-caja");
 
     let resultado = document.querySelector('#resultados');
-    resultado.style.display= "grid";
+    resultado.style.display= "none";
     // Ocultar avisos de error
     let aviso_error = document.getElementsByClassName("avisoError");
     let aviso_error_Billetes = document.getElementsByClassName("avisoErrorBilletes");
