@@ -16,8 +16,6 @@ window.addEventListener('load', function(){
     for(let j=0;j<aviso_error_Billetes.length;j++){
         aviso_error_Billetes[j].style.display= "none";
     }
-        
-        principal.style.height= "100vh";
 
     // Suma de Monedas y Billetes
 
