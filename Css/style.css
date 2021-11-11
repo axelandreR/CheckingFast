@@ -100,7 +100,7 @@ body {
     place-content: center;
     border-radius: 1rem;
     border: 1px var(--font-color) solid;
-    margin: 2rem 0;
+    margin: 1.5rem auto;
     height: 60vh;
 }
 
@@ -164,6 +164,7 @@ body {
 .footer{
     background-color: var(--first-color);
     border-radius: 1rem;
+    margin-top: 1.5rem;
 }
 
 .menu-footer{
@@ -200,7 +201,7 @@ body {
 
 /* Main Caja */
 .principal-caja{
-    height: 120vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -255,4 +256,24 @@ body {
   }
 .boton{
     margin: 0 auto;
+}
+
+/* Main resultados */
+.main-resultado{
+    margin: 0 auto;
+}
+
+.main-resultado p{
+    font-size: 1.2rem;
+}
+
+.main-resultado p span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.resultado-h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }

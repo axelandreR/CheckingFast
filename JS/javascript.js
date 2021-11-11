@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
     let principal = this.document.getElementsByClassName("principal-caja");
 
     let resultado = document.querySelector('#resultados');
-    resultado.style.display= "none";
+    resultado.style.display= "grid";
     // Ocultar avisos de error
     let aviso_error = document.getElementsByClassName("avisoError");
     let aviso_error_Billetes = document.getElementsByClassName("avisoErrorBilletes");
@@ -131,10 +131,11 @@ window.addEventListener('load', function(){
         let fecha = new Date();
         let fecha_hoy = (fecha.getDate()+"/"+(fecha.getMonth() + 1)+"/"+(fecha.getFullYear()) );
         let monedas = document.getElementsByClassName('monedas');
-        validacionMonedas(monedas);
+        let evaluacion1 = validacionMonedas(monedas);
         let sumaMonedas = sumaElementos(monedas);
 
         let billetes = document.getElementsByClassName('billetes');
+        let evaluacion2 = validacionBilletes(billetes);
         let sumaBilletes = sumaElementos(billetes);
         let total = sumaMonedas + sumaBilletes;
 
@@ -145,11 +146,14 @@ window.addEventListener('load', function(){
         let p_billetes = document.querySelector("#p_sumaBilletes span");
         let p_total = document.querySelector("#p_sumaTotal span");
 
-        p_fecha.innerHTML = fecha_hoy;
-        p_monedas.innerHTML = sumaMonedas;
-        p_billetes.innerHTML = sumaBilletes;
-        p_total.innerHTML = total;
-        
-        console.log(sumaMonedas);
+        if(evaluacion1 == true || evaluacion2 == true){
+            resultado.style.display = "none";
+        }else{
+            resultado.style.display = "grid";
+            p_fecha.innerHTML = fecha_hoy;
+            p_monedas.innerHTML = sumaMonedas;
+            p_billetes.innerHTML = sumaBilletes;
+            p_total.innerHTML = total;
+        }        
     })
 });
