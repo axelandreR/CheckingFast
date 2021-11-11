@@ -107,7 +107,11 @@ body {
 .main-formato{
     background-color: var(--title-color);
     border-radius: 1rem;
-    margin: 2rem 1rem;
+    
+}
+
+.main-caja{
+    margin: 0 1rem;
 }
 
 .titulo-index{
@@ -202,14 +206,22 @@ body {
 /* Main Caja */
 .principal-caja{
     height: 100vh;
-    position: relative;
+    /* position: relative; */
 }
 
 .titulo-caja{
-    position: absolute;
-    top: -2.5rem;
-    left: 12.5%;
-    margin: 0;
+    height: 8vh;
+    width: 32vh;
+    justify-content: space-evenly;
+    
+}
+
+.titulo-caja h2{
+    font-size: 1.5rem;
+}
+
+.titulo-caja img{
+    width: 2rem;
 }
 
 .formulario{
