@@ -12,18 +12,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="contenedor header">
-        <div class="encabezado">
-            <div>
-                <img src="img/rocket-solid-96.png" class="icono-header" alt="">
-                <h1 class="formato"> Quick-Checking Daily</h1>
-            </div>
-
-            <a href="index.html"> Menú Principal</a></li>
-            <a href="depositos.html"> Movimientos Diarios </a> </li>
+    <header class="contenedor header-caja">
+        <div class="icono-fondo">
+            <img src="img/rocket-solid-96.png" class="img-ajustes" alt="">
         </div>
-        <!--<input type="button" value="Volver" class="boton_personalizado" id="boton_regresar">-->
+
+        <div class="ajustes-header">
+            <img src="img/brightness-half.svg" class="img-ajustes" alt="">
+            <img src="img/setting.svg" class="img-ajustes" alt="">
+        </div>
     </header>
+
+    <main class="contenedor principal-caja main">
+        <div class="main-formato main-caja">
+            <div class="titulo-index titulo-caja">
+                <img src="img/clipboard-alt.svg" class="img_titulo-index" alt="">
+                <h2 class="titulo">Depositos</h2>
+            </div>
+        </div>
+
+        <form action="" method="POST" id="formulario2" class="formulario" onsubmit="return false;">
+            <h3>Movimientos</h3>
+            <div class="">
+                <p class="text-depositos"> Banco:
+                    <select name="OS" class="" id="Banco">
+                        <option value="0">--Elige una opción--</option>
+                        <option value="1">Caja Piura</option> 
+                        <option value="2">Caja Trujillo</option> 
+                        <option value="3">BCP</option>
+                        <option value="10">Interbank</option> 
+                        <option value="11">BBVA</option> 
+                        <option value="12">Scotiabank</option> 
+                    </select>
+                </p>
+
+                <p class="text-depositos"> Cuenta: 
+                    <input type="text" name="nombreCuenta" size="40" class="">
+                </p>
+
+                <p class="text-depositos"> Monto: 
+                    <input type="number" name="monto" size="40" class="">
+                </p>
+        </div>
+
+        <p class="centrar boton">
+            <input type="submit" value="Guardar" class="boton_personalizado" id="boton">
+            
+        </p>
+    </form>
+
+       
+    </main>
 
 </body>
 </html>

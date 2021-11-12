@@ -302,3 +302,14 @@ body {
     font-size: 1.5rem;
     margin: 0;
 }
+
+/* Interfaz Depositos */
+.text-depositos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-depositos input{
+    width: 10rem;
+}
