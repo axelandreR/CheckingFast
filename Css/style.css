@@ -205,8 +205,17 @@ body {
 
 /* Main Caja */
 .principal-caja{
-    height: 100vh;
-    /* position: relative; */
+    height: 90vh;
+}
+
+@media (min-width: 320px) {
+    .principal-caja{
+        height: 100%;
+    }
+    
+    .main{
+        padding: 1rem 0;
+    }
 }
 
 .titulo-caja{
@@ -226,6 +235,7 @@ body {
 
 .formulario{
     width: 40vh;
+    text-align: center;
 }
 
 .alinear_input p{

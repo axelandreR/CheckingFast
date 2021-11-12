@@ -2,7 +2,7 @@
 
 window.addEventListener('load', function(){
     let formulario = document.querySelector('#form');
-    let principal = this.document.getElementsByClassName("principal-caja");
+    let principal = document.getElementsByClassName("principal-caja");
 
     let resultado = document.querySelector('#resultados');
     resultado.style.display= "none";
@@ -17,6 +17,12 @@ window.addEventListener('load', function(){
         aviso_error_Billetes[j].style.display= "none";
     }
 
+    let altura = screen.height;
+    console.log(altura , typeof(altura));
+
+    if(altura >= 823){
+        principal.offsetHeight = "75vh";
+    }
     // Suma de Monedas y Billetes
 
     function sumaElementos(array){
