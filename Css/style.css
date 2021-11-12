@@ -283,10 +283,12 @@ body {
 /* Main resultados */
 .main-resultado{
     margin: 0 auto;
+    height: 40vh;
 }
 
 .main-resultado p{
     font-size: 1.2rem;
+    margin-top: 0;
 }
 
 .main-resultado p span{
@@ -298,4 +300,5 @@ body {
 .resultado-h3{
     text-transform: uppercase;
     font-size: 1.5rem;
+    margin: 0;
 }
