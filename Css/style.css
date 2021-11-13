@@ -40,7 +40,7 @@ body {
 .encabezado{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 40vh;
+    width: 41vh;
     align-items: center;
     margin: 1rem 0;
 }
@@ -71,7 +71,13 @@ body {
     grid-column: -3/-1;
 }
 
-@media (min-width: 360) {
+/* @media (min-width: 320px){
+    .encabezado{
+        width: 45vh;
+    }
+} */
+
+/* @media (min-width: 360) {
     .formato{
         font-size: 6rem;
     }
@@ -83,7 +89,7 @@ body {
     .icono-header{
         height: 5rem;
     }
-}
+} */
 
 /* Main */
 .ajustes{
