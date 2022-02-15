@@ -144,6 +144,7 @@ window.addEventListener('load', function(){
         let evaluacion2 = validacionBilletes(billetes);
         let sumaBilletes = sumaElementos(billetes);
         let total = sumaMonedas + sumaBilletes;
+        
 
         resultado.style.display= "grid";
         
@@ -157,9 +158,9 @@ window.addEventListener('load', function(){
         }else{
             resultado.style.display = "grid";
             p_fecha.innerHTML = fecha_hoy;
-            p_monedas.innerHTML = sumaMonedas;
-            p_billetes.innerHTML = sumaBilletes;
-            p_total.innerHTML = total;
+            p_monedas.innerHTML = sumaMonedas.toFixed(2);
+            p_billetes.innerHTML = sumaBilletes.toFixed(2);
+            p_total.innerHTML = total.toFixed(2);
         }        
     })
 });
